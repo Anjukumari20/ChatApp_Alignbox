@@ -18,27 +18,39 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
             <div class="header-center">
-                <div class="header-avatar-group"><img src="avatar1.jpg" alt="Group Avatar"></div>
+                <div class="header-avatar-group"><img src="/public/profile.png" alt="Group Avatar"></div>
                 <div class="group-name">Fun Friday Group</div>
             </div>
             <div class="header-right">
-                <i class="fas fa-user-friends"></i>
+                <img src="public/annobefore.png" class="anonymous" alt="Anonymous Photo"/>
             </div>
         </header>
 
         <main class="chat-container" id="chat-container">
-            </main>
+            <div class="anonymous-note"></div>
+        </main>
 
         <footer>
             <form id="message-form">
-                <input type="text" id="message-input" placeholder="Type a message..." required>
-                <button type="submit" id="send-button">
-                    <i class="fas fa-paper-plane"></i> 
-                </button> 
+                <div class="message-form">
+                    <input type="text" id="message-input" placeholder="Type a message..." required>
+                    <div class="footer-icons">
+                        <label for="file-input">
+                        <label for="file-input">
+                            <img src="public/cam.png" alt="Camera Icon" class="icon">
+                        </label>
+                        <input type="file" id="file-input" class="file-input" accept="image/*" capture="camera" style="display: none;">
+                            <img src="public/tag.png" alt="Tag Icon" class="icon">
+                        </label>
+                        <input type="file" id="file-input" class="file-input" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" id="send-button" class="send-button">
+                        <img src="public/send.png" alt="send Button" height="44px" width="44px"/>
+                    </button>
+                </div>
             </form>
-            <div class="anonymous-note">
-                <i class="fas fa-lock"></i> Now you're appearing as Anonymous!
-            </div>
         </footer>
     </div>
     
